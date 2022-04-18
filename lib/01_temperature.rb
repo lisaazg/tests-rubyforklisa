@@ -1,7 +1,7 @@
-ef ftoc(element)
-	return (element - 32) * (5.0/9)
+def ftoc fahrenheitValue
+    return (fahrenheitValue -32)*5/9
 end
 
-def ctof(element)
-	return (element * (9.0/5)) + 32
+def ctof celsiusValue
+    return (celsiusValue.to_f * 9/5)+32
 end
