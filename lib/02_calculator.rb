@@ -1,27 +1,63 @@
-def add(x, y)
-	x + y
-end
-
-def subtract(x, y)
-	x - y
-end
-
-def sum(array)
-	count = 0
-	array.each {|x| count = count + x}
-	count
-end
-
-def multiply(x, y)
-	x * y
-end
-
-def power(x, p)
-	x**p
-end
-
-def factorial(n)
-	facto = 1
-	n.downto(1) {|i| facto = facto * i if (n != 1 && n != 0)}
-	facto
-end
+def add(first, second)
+    return first + second
+  end
+  
+  
+  def subtract(first, second)
+  return first - second
+  end
+  
+  
+  
+  
+  def sum(array)
+    somme = 0
+    array.each { |a| somme +=a }
+    return somme
+  
+  end
+  
+    # autre méthode plus concises big up Steven
+    # def sum(array)
+    #
+      # return array.sum
+    #
+    #
+    # end
+  
+  def multiply(*elements)
+    multiple = 1
+    elements.each { |elem| multiple = multiple * elem}
+    return multiple
+  end
+  
+  puts multiply(1,2,3,4,5)
+  
+  def power(base, exposant)
+    puissance = 1
+    for i in 1..exposant do
+      puissance = puissance * base
+    end
+  
+  return puissance
+  
+  end
+  
+  puts power(5,2)
+  
+  def factorial(argument)
+    facto = 1
+    case argument
+    when argument <0
+      puts "entier positif en argument please"
+    when 0
+      return facto
+    else
+      1.upto(argument) { |n| facto = facto*n }
+      return facto
+    end
+  
+  end
+  
+  
+  puts factorial(10)
