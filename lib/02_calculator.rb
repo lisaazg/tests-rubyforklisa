@@ -17,13 +17,6 @@ def add(first, second)
   
   end
   
-    # autre méthode plus concises big up Steven
-    # def sum(array)
-    #
-      # return array.sum
-    #
-    #
-    # end
   
   def multiply(*elements)
     multiple = 1
